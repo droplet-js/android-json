@@ -26,6 +26,9 @@ steps:
     VERSION_NAME: 1.0.0-SNAPSHOT
   commands:
   - ./gradlew :json:clean :json:install :json:artifactoryPublish
+  when:
+    event:
+    - push
 
 - name: release
   image: runmymind/docker-android-sdk
