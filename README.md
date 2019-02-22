@@ -1,5 +1,8 @@
 # android-json
 
+[![Build Status](https://cloud.drone.io/api/badges/v7lin/android-json/status.svg)](https://cloud.drone.io/v7lin/android-json)
+[ ![Download](https://api.bintray.com/packages/v7lin/maven/json/images/download.svg) ](https://bintray.com/v7lin/maven/json/_latestVersion)
+
 ### json
 
 ````
