@@ -32,6 +32,7 @@ import java.util.Collection;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
+import java.util.Objects;
 import java.util.TreeSet;
 
 /**
@@ -116,6 +117,10 @@ public class JSONObject {
             return object == null || object == this;
         }
 
+        @Override
+        public int hashCode() {
+            return Objects.hashCode(null);
+        }
 
         /**
          * Get the "null" string value.

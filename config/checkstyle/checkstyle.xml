@@ -6,25 +6,25 @@
 <module name="Checker">
     <!--module name="NewlineAtEndOfFile"/-->
     <module name="FileLength"/>
-    <module name="FileTabCharacter"/>
+    <!--<module name="FileTabCharacter"/>-->
 
     <!-- Trailing spaces -->
-    <module name="RegexpSingleline">
-        <property name="format" value="\s+$"/>
-        <property name="message" value="Line has trailing spaces."/>
-    </module>
+    <!--<module name="RegexpSingleline">-->
+        <!--<property name="format" value="\s+$"/>-->
+        <!--<property name="message" value="Line has trailing spaces."/>-->
+    <!--</module>-->
 
     <!-- Space after 'for' and 'if' -->
-    <module name="RegexpSingleline">
-        <property name="format" value="^\s*(for|if)[^ ]\("/>
-        <property name="message" value="Space needed before opening parenthesis."/>
-    </module>
+    <!--<module name="RegexpSingleline">-->
+        <!--<property name="format" value="^\s*(for|if)[^ ]\("/>-->
+        <!--<property name="message" value="Space needed before opening parenthesis."/>-->
+    <!--</module>-->
 
     <!-- For each spacing -->
-    <module name="RegexpSingleline">
-        <property name="format" value="^\s*for \(.*?([^ ]:|:[^ ])"/>
-        <property name="message" value="Space needed around ':' character."/>
-    </module>
+    <!--<module name="RegexpSingleline">-->
+        <!--<property name="format" value="^\s*for \(.*?([^ ]:|:[^ ])"/>-->
+        <!--<property name="message" value="Space needed around ':' character."/>-->
+    <!--</module>-->
 
     <module name="TreeWalker">
         <!--<property name="cacheFile" value="${checkstyle.cache.file}"/>-->
@@ -76,21 +76,21 @@
         <!-- Checks for whitespace                               -->
         <!-- See http://checkstyle.sf.net/config_whitespace.html -->
         <module name="GenericWhitespace"/>
-        <module name="EmptyForIteratorPad"/>
+        <!--<module name="EmptyForIteratorPad"/>-->
         <module name="MethodParamPad"/>
         <!--<module name="NoWhitespaceAfter"/>-->
         <module name="NoWhitespaceBefore"/>
-        <module name="OperatorWrap"/>
+        <!--<module name="OperatorWrap"/>-->
         <module name="ParenPad"/>
         <module name="TypecastParenPad"/>
-        <module name="WhitespaceAfter"/>
-        <module name="WhitespaceAround"/>
+        <!--<module name="WhitespaceAfter"/>-->
+        <!--<module name="WhitespaceAround"/>-->
 
 
         <!-- Modifier Checks                                    -->
         <!-- See http://checkstyle.sf.net/config_modifiers.html -->
-        <module name="ModifierOrder"/>
-        <module name="RedundantModifier"/>
+        <!--<module name="ModifierOrder"/>-->
+        <!--<module name="RedundantModifier"/>-->
 
 
         <!-- Checks for blocks. You know, those {}'s         -->
@@ -113,7 +113,7 @@
         <module name="IllegalInstantiation"/>
         <!--<module name="InnerAssignment"/>-->
         <!--module name="MagicNumber"/-->
-        <module name="MissingSwitchDefault"/>
+        <!--<module name="MissingSwitchDefault"/>-->
         <!--<module name="RedundantThrows"/>-->
         <module name="SimplifyBooleanExpression"/>
         <module name="SimplifyBooleanReturn"/>
