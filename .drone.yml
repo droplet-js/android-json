@@ -35,6 +35,8 @@ steps:
   commands:
   - ./gradlew :json:clean :json:install :json:artifactoryPublish
   when:
+    branch:
+    - master
     event:
     - push
 
